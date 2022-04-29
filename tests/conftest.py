@@ -14,6 +14,7 @@ def application():
     })
     yield application
 
+
 @pytest.fixture()
 def client(application):
     """This makes the http client"""
