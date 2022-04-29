@@ -30,6 +30,7 @@ def page_not_found(e):
 def create_app():
     """Create and configure an instance of the Flask application."""
     app = Flask(__name__)
+    SECRET_KEY = 'S@g@r'
     if  os.environ.get("FLASK_ENV") == "production":
         app.config.from_object("app.config.ProductionConfig")
     elif os.environ.get("FLASK_ENV") == "development":

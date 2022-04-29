@@ -363,3 +363,15 @@ WHERE users.id = ?
 FROM users 
 WHERE users.id = ?
 2022-04-29 19:59:30,920 [INFO] sqlalchemy.engine.Engine: [cached since 89.97s ago] (1,)
+2022-04-29 20:34:23,531 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-04-29 20:34:23,531 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("songs")
+2022-04-29 20:34:23,531 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-04-29 20:34:23,533 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("users")
+2022-04-29 20:34:23,533 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-04-29 20:34:23,534 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-04-29 20:38:09,394 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-04-29 20:38:09,394 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("songs")
+2022-04-29 20:38:09,394 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-04-29 20:38:09,396 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("users")
+2022-04-29 20:38:09,396 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-04-29 20:38:09,396 [INFO] sqlalchemy.engine.Engine: COMMIT
