@@ -2,7 +2,7 @@ import csv
 import logging
 import os
 
-from flask import Blueprint, render_template, abort, url_for,current_app
+from flask import Blueprint, render_template, abort, url_for, current_app, app
 from flask_login import current_user, login_required
 from jinja2 import TemplateNotFound
 
@@ -34,7 +34,8 @@ def songs_upload():
         log = logging.getLogger("myApp")
 
         filename = secure_filename(form.file.data.filename)
-        filepath = os.path.join(current_app.config['UPLOAD_FOLDER'], filename)
+        os.makedirs(os.path.join(current_app.instance_path, 'uploads'), exist_ok=True)
+        filepath = os.path.join(current_app.instance_path, 'Uploads', secure_filename(filename))
         form.file.data.save(filepath)
         #user = current_user
         list_of_songs = []
