@@ -6,6 +6,8 @@ from flask_wtf.csrf import CSRFProtect
 from flask_cors import CORS
 
 import os
+
+
 from app.auth import auth
 from app.auth import auth
 from app.cli import create_database
@@ -30,7 +32,8 @@ def page_not_found(e):
 def create_app():
     """Create and configure an instance of the Flask application."""
     app = Flask(__name__)
-    SECRET_KEY = 'S@g@r'
+    app.config['TESTING'] = True
+    app.config['SECRET_KEY'] = 'S@g@r'
     if  os.environ.get("FLASK_ENV") == "production":
         app.config.from_object("app.config.ProductionConfig")
     elif os.environ.get("FLASK_ENV") == "development":
