@@ -153,3 +153,4 @@
 2022-04-29 19:59:30,948 [INFO] werkzeug: 172.23.0.1 - - [29/Apr/2022 19:59:30] "[36mGET /songs/upload?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
 2022-04-29 19:59:30,961 [INFO] werkzeug: 172.23.0.1 - - [29/Apr/2022 19:59:30] "[36mGET /songs/upload?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
 2022-04-29 19:59:30,980 [INFO] werkzeug: 172.23.0.1 - - [29/Apr/2022 19:59:30] "[36mGET /songs/upload?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2022-04-29 20:38:07,988 [INFO] werkzeug:  * Detected change in '/home/myuser/app/__init__.py', reloading
