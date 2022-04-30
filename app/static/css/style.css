@@ -1,3 +1,57 @@
 body {
 font-size: 200%;
 }
+body {
+    font-family: Helvetica, "Helvetica Neue", sans-serif;
+}
+
+.bluish{
+    background-color:#1B7380;
+    color: white;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.current{
+    font-weight: bold;
+    margin: 20px;
+    padding: 20px;
+}
+
+.contain{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+.pic{
+    text-align: center;
+}
+
+.navbar .nav {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.navbar .nav > li > a {
+  color: #ffffff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.5em;
+}
+
+figcaption {
+    margin: 10px 0 0 0;
+    text-align: center;
+    font-variant: small-caps;
+    font-family: Arial;
+    font-weight: bold;
+font-size: 0.5em;
+    color: #bb3333;
+}

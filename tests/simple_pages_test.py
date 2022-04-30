@@ -26,7 +26,7 @@ def test_request_page1(client):
     """This makes the index page"""
     response = client.get("/welcome")
     assert response.status_code == 200
-    assert b"welcome" in response.data
+    assert b"Python" in response.data
 
 def test_request_page_not_found(client):
     """This makes the index page"""
